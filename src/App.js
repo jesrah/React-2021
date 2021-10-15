@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Todo from './Todo';
+import Modal from './Modal';
+import Backdrop from './Backdrop';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My Favorite Posts</h1>
+          <Todo text='Learn React' />
+          <Todo text='Use React' />
+          <Modal />
+          <Backdrop />
     </div>
   );
 }
